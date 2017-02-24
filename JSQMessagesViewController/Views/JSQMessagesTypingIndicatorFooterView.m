@@ -82,7 +82,7 @@ const CGFloat kJSQMessagesTypingIndicatorFooterViewHeight = 46.0f;
     NSParameterAssert(messageBubbleColor != nil);
     NSParameterAssert(collectionView != nil);
 
-    CGFloat bubbleMarginMinimumSpacing = 6.0f;
+    CGFloat bubbleMarginMinimumSpacing = 12.0f;
 
     JSQMessagesBubbleImageFactory *bubbleImageFactory = [[JSQMessagesBubbleImageFactory alloc] initWithBubbleImage:[UIImage imageNamed:@"chatbot_bubble"] capInsets:UIEdgeInsetsZero layoutDirection:UIUserInterfaceLayoutDirectionLeftToRight];
 
