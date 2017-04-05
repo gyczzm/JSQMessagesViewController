@@ -430,6 +430,7 @@ static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;
         
         [UIView animateWithDuration:0.5 delay:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             self.messageBubbleContainerView.alpha = 1.0;
+            self.accessoryButton.alpha = 1.0;
         } completion:nil];
     }
 }
