@@ -419,20 +419,4 @@ static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;
     [self.delegate messagesCollectionViewCellDidTapAccessoryButton:self];
 }
 
-#pragma mark - KVO
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
-{
-    if ([keyPath isEqualToString:@"alpha"]) {
-        if (self.messageBubbleContainerView.alpha != 0.0) {
-            return;
-        }
-        
-        [UIView animateWithDuration:0.5 delay:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.messageBubbleContainerView.alpha = 1.0;
-            self.accessoryButton.alpha = 1.0;
-        } completion:nil];
-    }
-}
-
 @end
